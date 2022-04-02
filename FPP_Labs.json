@@ -1,0 +1,13 @@
+{
+    "path": "$FPP_LABS",
+    "load_package_once": true,
+	"enable": true,
+    "env": [
+        {
+            "FPP_LABS": "J:/Houdini/FPP_Packages"
+        },
+        {
+            "PYTHONPATH": "$FPP_LABS/python"
+        }
+    ]
+}

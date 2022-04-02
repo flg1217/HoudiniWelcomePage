@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<shelfDocument>
+  <!-- This file contains definitions of shelves, toolbars, and tools.
+ It should not be hand-edited when it is being used by the application.
+ Note, that two definitions of the same element are not allowed in
+ a single file. -->
+
+  <toolshelf name="Fpp" label="Fpp">
+    <memberTool name="WelcomePanel"/>
+  </toolshelf>
+
+  <tool name="WelcomePanel" label="WelcomePanel" icon="PLASMA_App">
+    <script scriptType="python"><![CDATA[from importlib import reload
+import UI_WelcomePage
+reload(UI_WelcomePage)
+hou.fpp_welcome = UI_WelcomePage.WelcomePage()]]></script>
+  </tool>
+</shelfDocument>
